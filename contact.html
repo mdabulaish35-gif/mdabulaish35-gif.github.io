@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Abulaish</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            Abulaish's Portfolio
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+
+            <!-- Home -->
+            <li>
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+
+
+            <!-- About -->
+            <li>
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+            </li>
+
+
+            <!-- Work Dropdown -->
+            <li class="dropdown">
+
+                <button class="work-btn">
+                    Work
+                    <span class="arrow">⌄</span>
+                </button>
+
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="projects.html">
+                            <span class="menu-icon">▣</span>
+                            <span>
+                                <strong>Projects</strong>
+                                <small>My recent work</small>
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="skills.html">
+                            <span class="menu-icon">&lt;/&gt;</span>
+                            <span>
+                                <strong>Skills</strong>
+                                <small>My technical skills</small>
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="services.html">
+                            <span class="menu-icon">✦</span>
+                            <span>
+                                <strong>Services</strong>
+                                <small>What I can do</small>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- Contact -->
+            <li>
+                <a href="contact.html" class="nav-link active">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Right Side -->
+        <div class="nav-actions">
+
+            <!-- Theme Button -->
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                ☾
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
+
+
+    <main>
+
+        <!-- =================================
+         CONTACT PAGE
+    ================================= -->
+
+        <section class="contact-page">
+
+            <div class="contact-wrapper">
+
+
+                <!-- LEFT SIDE -->
+
+                <div class="contact-intro">
+
+                    <p class="contact-label">
+                        GET IN TOUCH
+                    </p>
+
+                    <h1>
+                        Let's Talk
+                        <span>Together.</span>
+                    </h1>
+
+                    <p class="contact-description">
+                        Have a question, project idea or opportunity?
+                        Feel free to reach out. I would be happy to
+                        connect with you.
+                    </p>
+
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-info">
+
+
+                        <!-- Email -->
+
+                        <a href="mailto:your-email@gmail.com" class="contact-info-card">
+
+                            <div class="contact-icon">
+                                ✉
+                            </div>
+
+                            <div>
+                                <strong>Email</strong>
+
+                                <span>
+                                    mdabulaish35@gmail.com
+                                </span>
+                            </div>
+
+                        </a>
+
+
+                        <!-- Phone -->
+
+                        <a href="tel:+919546304793" class="contact-info-card">
+
+                            <div class="contact-icon">
+                                ☎
+                            </div>
+
+                            <div>
+                                <strong>Phone</strong>
+
+                                <span>
+                                    +91 9546304793
+                                </span>
+                            </div>
+
+                        </a>
+
+
+                        <!-- LinkedIn -->
+
+                        <a href="https://www.linkedin.com/in/abulaish12" target="_blank" class="contact-info-card">
+
+                            <div class="contact-icon">
+                                in
+                            </div>
+
+                            <div>
+                                <strong>LinkedIn</strong>
+
+                                <span>
+                                    Connect with me
+                                </span>
+                            </div>
+
+                        </a>
+
+
+                        <!-- GitHub -->
+
+                        <a href="https://github.com/mdabulaish35-gif" target="_blank" class="contact-info-card">
+
+                            <div class="contact-icon">
+                                &lt;/&gt;
+                            </div>
+
+                            <div>
+                                <strong>GitHub</strong>
+
+                                <span>
+                                    Explore my projects
+                                </span>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE - FORM -->
+
+                <div class="contact-form-container">
+
+                    <h2>
+                        Send Me a Message
+                    </h2>
+
+                    <p>
+                        Fill out the form and I'll get back to you.
+                    </p>
+
+
+                    <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+
+
+                        <!-- Name -->
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your Name
+                            </label>
+
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        </div>
+
+
+                        <!-- Subject -->
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?">
+
+                        </div>
+
+
+                        <!-- Message -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <button type="submit" class="contact-submit">
+
+                            Send Message →
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

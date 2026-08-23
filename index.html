@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abulaish | Personal Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            Abulaish's Portfolio
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-links">
+
+            <!-- Home -->
+            <li>
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+            </li>
+
+
+            <!-- About -->
+            <li>
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+            </li>
+
+
+            <!-- Work Dropdown -->
+            <li class="dropdown">
+
+                <button class="work-btn">
+                    Work
+                    <span class="arrow">⌄</span>
+                </button>
+
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="projects.html">
+                            <span class="menu-icon">▣</span>
+                            <span>
+                                <strong>Projects</strong>
+                                <small>My recent work</small>
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="skills.html">
+                            <span class="menu-icon">&lt;/&gt;</span>
+                            <span>
+                                <strong>Skills</strong>
+                                <small>My technical skills</small>
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="services.html">
+                            <span class="menu-icon">✦</span>
+                            <span>
+                                <strong>Services</strong>
+                                <small>What I can do</small>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- Contact -->
+            <li>
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Right Side -->
+        <div class="nav-actions">
+
+            <!-- Theme Button -->
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                ☾
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <!-- Left Content -->
+
+            <div class="hero-left">
+
+                <p class="hero-intro">
+                    Hello, I'm Abulaish 👋
+                </p>
+
+                <h1>
+                    I am a Software
+                    <span>&lt;Developer/&gt;</span>
+                </h1>
+
+                <p class="hero-description">
+                    A passionate BCA student and aspiring software developer
+                    who enjoys building modern, responsive and user-friendly
+                    applications.
+                </p>
+
+
+                <!-- Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a href="contact.html" class="hero-btn primary-btn">
+                        Contact Me →
+                    </a>
+
+                    <a href="Abulaish_CV.pdf" class="hero-btn secondary-btn" download>
+                        Download CV ↓
+                    </a>
+
+                </div>
+
+
+                <!-- Technologies -->
+
+                <div class="hero-tech">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Java</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Image -->
+
+            <div class="hero-right">
+
+                <div class="image-decoration"></div>
+
+                <div class="profile-image">
+
+                    <img src="Front.jpg" alt="Abulaish">
+
+                </div>
+
+
+                <!-- Small floating card -->
+
+                <div class="developer-card">
+
+                    <span class="code-icon">
+                        &lt;/&gt;
+                    </span>
+
+                    <div>
+                        <strong>Developer</strong>
+                        <small>Always Learning</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+                <div class="stat-number">BCA</div>
+                <div class="stat-title">Computer Applications</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-title">Projects</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-title">Technologies</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">∞</div>
+                <div class="stat-title">Learning Mindset</div>
+            </div>
+
+        </section>
+
+        <!-- ================================
+     FEATURED PROJECTS
+================================= -->
+
+        <section class="featured-projects">
+
+            <div class="section-heading">
+
+                <p>MY WORK</p>
+
+                <h2>
+                    Featured <span>Projects</span>
+                </h2>
+
+                <p class="section-description">
+                    Here are some of the projects I have worked on
+                    while learning and developing my technical skills.
+                </p>
+
+            </div>
+
+
+            <div class="featured-project-grid">
+
+
+                <!-- Project 1 -->
+
+                <div class="featured-project-card">
+
+                    <div class="featured-project-image">
+
+                        <img src="project1.jpg" alt="Student Management System">
+
+                    </div>
+
+                    <div class="featured-project-content">
+
+                        <span class="project-tag">
+                            Web Application
+                        </span>
+
+                        <h3>
+                            Student Management System
+                        </h3>
+
+                        <p>
+                            A student management application designed
+                            to manage student information and records
+                            efficiently.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="featured-project-buttons">
+
+                            <a href="projects.html">
+                                View Project →
+                            </a>
+
+                            <a href="#" class="github-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+
+                <div class="featured-project-card">
+
+                    <div class="featured-project-image">
+
+                        <img src="project2.jpg" alt="AZ Video Chat App">
+
+                    </div>
+
+                    <div class="featured-project-content">
+
+                        <span class="project-tag">
+                            Full Stack
+                        </span>
+
+                        <h3>
+                            AZ Video Chat App
+                        </h3>
+
+                        <p>
+                            A real-time video communication application
+                            built with modern web technologies.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+
+                        </div>
+
+
+                        <div class="featured-project-buttons">
+
+                            <a href="projects.html">
+                                View Project →
+                            </a>
+
+                            <a href="#" class="github-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+
+                <div class="featured-project-card">
+
+                    <div class="featured-project-image">
+
+                        <img src="project3.jpg" alt="Portfolio Website">
+
+                    </div>
+
+                    <div class="featured-project-content">
+
+                        <span class="project-tag">
+                            Frontend
+                        </span>
+
+                        <h3>
+                            Personal Portfolio
+                        </h3>
+
+                        <p>
+                            A responsive personal portfolio website
+                            showcasing my skills, projects and
+                            development journey.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="featured-project-buttons">
+
+                            <a href="projects.html">
+                                View Project →
+                            </a>
+
+                            <a href="#" class="github-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- View All Projects -->
+
+            <div class="view-all-projects">
+
+                <a href="projects.html">
+                    View All Projects →
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =================================
+     ABOUT ME PREVIEW
+================================= -->
+
+        <section class="about-preview">
+
+            <div class="about-preview-image">
+
+                <img src="Front.jpg" alt="About Abulaish">
+
+            </div>
+
+
+            <div class="about-preview-content">
+
+                <p class="about-label">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    A Student Who Loves
+                    <span>Building Things</span>
+                </h2>
+
+                <p>
+                    I am a BCA student with a strong interest in software
+                    development and modern web technologies. I enjoy learning
+                    new technologies and turning ideas into practical projects.
+                </p>
+
+                <p>
+                    My goal is to continuously improve my programming,
+                    problem-solving and development skills while building
+                    useful and user-friendly applications.
+                </p>
+
+
+                <div class="about-highlights">
+
+                    <div>
+                        <strong>BCA</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <div>
+                        <strong>Developer</strong>
+                        <small>Learning & Building</small>
+                    </div>
+
+                    <div>
+                        <strong>Tech</strong>
+                        <small>Enthusiast</small>
+                    </div>
+
+                </div>
+
+
+                <a href="about.html" class="about-preview-btn">
+                    Read More About Me →
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =================================
+     LET'S WORK TOGETHER
+================================= -->
+
+        <section class="work-cta">
+
+            <div class="cta-content">
+
+                <p class="cta-label">
+                    HAVE A PROJECT IN MIND?
+                </p>
+
+                <h2>
+                    Let's Build Something
+                    <span>Great Together.</span>
+                </h2>
+
+                <p>
+                    I'm always interested in learning, building new projects
+                    and exploring opportunities where I can grow my skills.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="contact.html" class="cta-primary">
+                        Let's Talk →
+                    </a>
+
+                    <a href="projects.html" class="cta-secondary">
+                        View My Work
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- =================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <!-- Footer About -->
+
+        <div class="footer-about">
+
+            <a href="index.html" class="footer-logo">
+                Abulaish's Portfolio
+            </a>
+
+            <p>
+                BCA student and aspiring software developer
+                passionate about learning, building and creating
+                useful digital experiences.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <!-- Work -->
+
+        <div class="footer-links">
+
+            <h3>Work</h3>
+
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+
+        </div>
+
+
+        <!-- Contact -->
+
+        <div class="footer-links">
+
+            <h3>Connect</h3>
+
+            <a href="contact.html">Email</a>
+            <a href="contact.html">LinkedIn</a>
+            <a href="contact.html">GitHub</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Bottom -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Abulaish. All Rights Reserved.
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript.
+        </p>
+
+    </div>
+
+</footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
