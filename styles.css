@@ -4067,3 +4067,466 @@ body.dark-mode .form-group textarea::placeholder {
     opacity: 0.7;
     cursor: not-allowed;
 }
+
+/* =====================================================
+   SKILLS PAGE
+===================================================== */
+
+/* Main Skills Section */
+.skills-page {
+    min-height: calc(100vh - 90px);
+    padding: 80px 7%;
+    background: rgb(234, 245, 244);
+}
+
+
+/* =====================================================
+   SKILLS HEADING
+===================================================== */
+
+.skills-heading {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.skills-label {
+    margin: 0 0 12px;
+
+    color: rgb(4, 47, 177);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+.skills-heading h1 {
+    margin: 0 0 20px;
+
+    color: #222;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+.skills-heading h1 span {
+    color: rgb(4, 47, 177);
+}
+
+.skills-heading > p:last-child {
+    margin: 0;
+
+    color: #5f6b7a;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   SKILLS CARDS CONTAINER
+===================================================== */
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =====================================================
+   SKILL CARD
+===================================================== */
+
+.skill-card {
+    padding: 32px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(4, 47, 177, 0.08);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.skill-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(4, 47, 177, 0.14);
+}
+
+
+/* =====================================================
+   SKILL ICON
+===================================================== */
+
+.skill-card-icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgb(32, 2, 76),
+            rgb(4, 47, 177)
+        );
+
+    color: white;
+
+    border-radius: 14px;
+
+    font-size: 21px;
+
+    box-shadow:
+        0 8px 18px rgba(4, 47, 177, 0.20);
+}
+
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.skill-card h2 {
+    margin: 0 0 10px;
+
+    color: #222;
+
+    font-size: 25px;
+}
+
+.skill-card > p {
+    margin: 0 0 28px;
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   INDIVIDUAL SKILL
+===================================================== */
+
+.skill {
+    margin-bottom: 21px;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Skill name + percentage */
+
+.skill-name {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 8px;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   PROGRESS BAR
+===================================================== */
+
+.skill-bar {
+    width: 100%;
+    height: 9px;
+
+    background: #e7ecf5;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+
+/* Progress */
+
+.skill-progress {
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgb(32, 2, 76),
+            rgb(4, 47, 177)
+        );
+
+    border-radius: 50px;
+
+    transition: width 1s ease;
+}
+
+
+/* =====================================================
+   CURRENTLY LEARNING
+===================================================== */
+
+.learning-box {
+    max-width: 1200px;
+
+    margin: 35px auto 0;
+
+    padding: 40px 35px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgb(32, 2, 76),
+            rgb(4, 47, 177)
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(4, 47, 177, 0.20);
+}
+
+
+.learning-box > p {
+    margin: 0 0 10px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+
+.learning-box h2 {
+    margin: 0 0 25px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   LEARNING TAGS
+===================================================== */
+
+.learning-tags {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.learning-tags span {
+    padding: 9px 17px;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.learning-tags span:hover {
+    background: rgba(255, 255, 255, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .skills-page {
+        padding: 65px 5%;
+    }
+
+    .skills-heading h1 {
+        font-size: 44px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .skills-page {
+        padding: 50px 20px;
+    }
+
+    .skills-heading {
+        margin-bottom: 40px;
+    }
+
+    .skills-label {
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .skills-heading h1 {
+        font-size: 36px;
+    }
+
+    .skills-heading > p:last-child {
+        font-size: 15px;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+
+    .skill-card h2 {
+        font-size: 22px;
+    }
+
+    .learning-box {
+        padding: 30px 20px;
+    }
+
+    .learning-box h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .skills-heading h1 {
+        font-size: 31px;
+    }
+
+    .skill-card {
+        padding: 21px;
+    }
+
+    .learning-tags {
+        gap: 8px;
+    }
+
+    .learning-tags span {
+        padding: 8px 12px;
+    }
+
+}
+
+/* =========================================
+   SKILLS PAGE - DARK MODE
+========================================= */
+
+body.dark-mode .skills-page {
+    background: #0f172a;
+}
+
+/* Heading */
+body.dark-mode .skills-heading h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .skills-heading > p:last-child {
+    color: #94a3b8;
+}
+
+
+/* Skill Cards */
+body.dark-mode .skill-card {
+    background: #1e293b;
+    border-color: rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .skill-card h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .skill-card > p {
+    color: #94a3b8;
+}
+
+
+/* Skill names */
+body.dark-mode .skill-name {
+    color: #f8fafc;
+}
+
+
+/* Progress bars */
+body.dark-mode .skill-bar {
+    background: #334155;
+}
+
+
+/* Learning box */
+body.dark-mode .learning-box {
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
