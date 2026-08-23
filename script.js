@@ -73,3 +73,69 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+// =========================================
+// CONTACT FORM
+// =========================================
+
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        const submitButton = contactForm.querySelector(
+            ".contact-submit"
+        );
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        const formData = new FormData(contactForm);
+
+        try {
+
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+
+                // Clear the entire form
+                contactForm.reset();
+
+                // Success message
+                formStatus.textContent =
+                    "✓ Message sent successfully! Thank you for contacting me.";
+
+                formStatus.className = "success";
+
+            } else {
+
+                formStatus.textContent =
+                    "Something went wrong. Please try again.";
+
+                formStatus.className = "error";
+            }
+
+        } catch (error) {
+
+            formStatus.textContent =
+                "Unable to send message. Please check your internet connection.";
+
+            formStatus.className = "error";
+        }
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message →";
+
+    });
+
+}
